@@ -1,3 +1,6 @@
+# AWS Skillbuilder lambda course presented by George Mao
+
+
 [x] AWS Free tier (12 months for free on some services)
 [x] AWS Billing dashboard
 [x] AWS Bills page - breaks between regions and monthly
@@ -17,6 +20,7 @@ DynamoDb (Time series DB Non relational DB)
 Amazon API gateway
 Step functions
 Amazon SQS
+Serverless Application Model (SAM)
 
 [x] Amazon data stores
 S3
@@ -26,6 +30,11 @@ Amazon Cognito
 RDS
 
 [x] How do lambda works in background
-
 [x] Pywren - Python benchmarch for testing AWS Serverless
+[ ] AWS AWS Serverles Application Model (SAM)
+
+[x] Case studies
+https://aws.amazon.com/serverless/resources/ 
+
+---------------------------------------------------------------------------------------------
 
