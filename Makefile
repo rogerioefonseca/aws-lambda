@@ -1,10 +1,23 @@
-ZIP = zip
+ZIP := zip
+GO := GO
+MAKE := make
 
-archive: build zip
+archive: dependencies build zip
+	@echo "#  executing " $@
 	echo 'Builded and zipped'
+	@echo
 
-build:
-	GOOS=linux GOARCH=amd64 go build -o main main.go
+build: 
+	@echo "#  executing " $@
+	GOOS=linux GOARCH=amd64 $(GO) build -o main main.go
+	@echo
+
+dependencies:
+	@echo "#  executing " $@
+	$(GO) get github.com/aws/aws-lambda-go/lambda
+	@echo
 
 zip:
+	@echo "#  executing " $@
 	$(ZIP) archive.zip main
+	@echo
