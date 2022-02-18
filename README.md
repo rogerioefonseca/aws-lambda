@@ -37,4 +37,9 @@ RDS
 https://aws.amazon.com/serverless/resources/ 
 
 ---------------------------------------------------------------------------------------------
+[x] ROLES and IAM Execution ROLE
+[x] Tro provide AWS Lambda function to your private VPC you need to configure an NAT gateway, and because of that the Lambda functions needs execution access to 
+create describe and delete network interfaces
+![Lambda function vpc](./lambda-function-vpc.png)
+
 
