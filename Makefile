@@ -1,4 +1,4 @@
-ZIP := zip
+ZIP = zip
 
 archive: build zip
 	echo 'Builded and zipped'
