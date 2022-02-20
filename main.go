@@ -4,20 +4,38 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
+	"os"
 
 	"net/http"
-	art "rogerioefonseca/serverless/defer"
-	keyboard "rogerioefonseca/serverless/keyboard_input"
+	datastructures "rogerioefonseca/serverless/data-structures"
+	defer_test "rogerioefonseca/serverless/defer"
 )
 
 func hello(event InputEvent) (string, error) {
 	return "It works", nil
 }
 
+func dataStructures() {
+	fmt.Println("##############")
+	result, err := datastructures.LinearSearch()
+
+	if err != nil {
+		fmt.Println("entry not found")
+		os.Exit(1)
+	}
+
+	fmt.Printf("%t", result)
+}
+
 func main() {
-	fmt.Println(art.Test)
-	keyboard.GetCity()
-	//lambda.Start(hello)
+	defer_test.Foo()
+	dataStructures()
+
+	fmt.Println("")
+	fmt.Println("##############")
+
+	//keyboard.GetCity()
+	//lambda.Stdefer_test(hello)
 }
 
 type InputEvent struct {
